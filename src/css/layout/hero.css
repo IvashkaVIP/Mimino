@@ -180,12 +180,9 @@
   }
   .hero-description.desktop {
     display: flex;
+    gap: 32px;
   }
-  .hero-main {
-
-  }
-
-  
+    
   .hero-image {
     margin: 0;
     padding: 274px 0 0 0;
