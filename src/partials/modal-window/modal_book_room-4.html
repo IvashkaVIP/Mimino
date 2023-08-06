@@ -1,0 +1,64 @@
+<div class="backdrop is-hidden" data-modal-fourth-room>
+  <div class="book-a-room">
+    <button type="button" class="close-btn" data-modal-fourth-room-close>
+      <svg class="close-btn-icon" width="28" height="28">
+        <use href="./img/icons.svg#icon-close-window" viewBox="0 0 32 32"></use>
+      </svg>
+    </button>
+    <h2 class="book-a-room-title">BOOK A ROOM</h2>
+    <form class="first-form-page">
+      <div class="form-wrap">
+        <div>
+          <p class="first-form-suptitle">Your name</p>
+          <input
+            class="form-input"
+            type="text"
+            name="user-name"
+            pattern="^[a-zA-Zа-яА-Я]+$"
+            minlength="2"
+            autofocus
+            required
+          />
+          <span class="first-form-text">Who should book a table for?</span>
+        </div>
+        <div>
+          <p class="first-form-suptitle">+ 38 ()</p>
+          <input
+            class="form-input"
+            type="tel"
+            pattern="^[0-9]{3}-[0-9]{3}-[0-9]-{2}-[0-9]{2}"
+            name="user-phone"
+            required
+          />
+          <span class="first-form-text">Phone number</span>
+        </div>
+        <div>
+          <select class="form-select" name="check-in-date">
+            <option value="Today">Today</option>
+            <option value="Tomorrow">Tomorrow</option>
+            <option value="Day after tomorrow">Day after tomorrow</option>
+          </select>
+          <span class="first-form-text">Check-in date</span>
+        </div>
+        <div>
+          <select class="form-select" name="date">
+            <option value="25/04/2023">25/04/2023</option>
+            <option value="26/04/2023">26/04/2023</option>
+            <option value="27/04/2023">27/04/2023</option>
+            <option value="28/04/2023">28/04/2023</option>
+            <option value="29/04/2023">29/04/2023</option>
+          </select>
+          <span class="first-form-text">Check-out date</span>
+        </div>
+        <div>
+          <select class="form-select" name="view of the rooms">
+            <option value="Double suite">Double suite</option>
+            <option value="Double suite">Triple suite</option>
+          </select>
+          <span class="first-form-text">Number category</span>
+        </div>
+      </div>
+      <button class="book-a-room-btn" type="submit">MAKE A RESERVATION</button>
+    </form>
+  </div>
+</div>

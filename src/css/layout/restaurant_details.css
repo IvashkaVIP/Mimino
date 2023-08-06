@@ -1,0 +1,140 @@
+.restourants-text-box {
+  margin-bottom: 32px;
+}
+
+.restaurants-details-title {
+  line-height: 1;
+}
+
+.restaurants-details-text {
+  font-weight: 500;
+  width: 221px;
+}
+
+.restaurants-details-list {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 82px;
+}
+
+.restourant-details-buttons-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+}
+
+.restaurants-details-modal-btn {
+  margin: 0 auto;
+  padding: 8px 18px;
+  border: 0.8px solid #121212;
+  border-radius: 32px;
+  background-color: var(--primary-background-color);
+font-size: 18px;
+line-height: 1.333;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
+}
+
+.restaurants-details-modal-btn:hover,
+.restaurants-details-modal-btn:focus {
+  color: var(--primary-background-color);
+  background-color: var(--secondary-background-color);
+}
+
+.restaurants-details-link {
+  display: block;
+  padding: 8px 18px;
+  border: 0.8px solid #121212;
+  border-radius: 32px;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.3333;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #121212;
+
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
+}
+
+.restaurants-details-link:hover,
+.restaurants-details-link:focus {
+  color: var(--primary-background-color);
+  background-color: var(--secondary-background-color);
+}
+
+/* @Media------------------------------------------------> */
+
+@media screen and (max-width: 767px) {
+  .restourant-details-modal {
+    max-width: 335px;
+  }
+  .restaurants-details-link {
+  font-size: 14px;
+  line-height: 1.29;
+  }
+  .restaurants-details-modal-btn{
+      font-size: 14px;
+  line-height: 1.29;
+  }
+  .restaurants-details-title {
+    margin-bottom: 24px;
+    font-size: 40px;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .restourant-details-modal {
+    max-width: 628px;
+  }
+  .restourants-text-box {
+    align-items: center;
+    display: flex;
+    margin-bottom: 80px;
+  }
+  .restaurants-details-title {
+    font-size: 68px;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+  .restaurants-details-text {
+    margin: 0;
+    margin-left: 32px;
+  }
+  .restourants-text-box {
+    margin-bottom: 80px;
+  }
+  .restourant-details-buttons-list {
+    gap: 14px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .none {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .restourant-details-buttons-list {
+    position: absolute;
+    top: 0;
+    right: 32px;
+  }
+  .container-relative {
+    position: relative;
+  }
+
+  .restourants-text-box {
+    margin-bottom: 125px;
+  }
+}

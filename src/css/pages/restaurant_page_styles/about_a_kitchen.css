@@ -1,0 +1,109 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.picture-about-kitchen-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.picture-about-kitchen-wrap-seckond {
+  display: flex;
+  gap: 20px;
+}
+.text-about-kitchen {
+  font-weight: var(--font-weight-large);
+}
+.text-italic{
+    font-style: italic;
+}
+/* mobile style */
+@media screen and (max-width: 767px) {
+  .picture-about-kitchen-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .picture-about-kitchen-wrap-seckond {
+    display: flex;
+    gap: 20px;
+  }
+  .list-text-about-kitchen {
+    margin-top: 24px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .text-about-kitchen-first {
+    display: none;
+  }
+  .text-about-kitchen-second {
+    display: none;
+  }
+}
+
+/* Tablet style */
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .picture-about-kitchen-wrap {
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .picture-about-kitchen-wrap-seckond {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .list-text-about-kitchen {
+    margin-top: 24px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+  .text-about-kitchen {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+  .text-about-kitchen-first {
+    display: none;
+  }
+  .text-about-kitchen-second {
+    display: none;
+  }
+}
+
+/* Desktop style */
+@media screen and (min-width: 1440px) {
+  .picture-about-kitchen-wrap {
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  .picture-about-kitchen-wrap-seckond {
+    flex-direction: row;
+  }
+  .list-text-about-kitchen {
+    display: none;
+  }
+
+  .text-about-kitchen-first {
+    margin-top: 32px;
+    display: block;
+    max-width: 334px;
+  }
+  .text-about-kitchen-second {
+    margin-top: 32px;
+    display: block;
+    max-width: 453px;
+  }
+}

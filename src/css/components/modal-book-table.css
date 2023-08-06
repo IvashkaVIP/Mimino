@@ -1,0 +1,230 @@
+/* modal  css-----------------------------------> */
+.backdrop {
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.restourant-details-modal {
+  min-width: 320px;
+  max-width: 335px;
+  max-height: 550px;
+  background: #121212;
+  border-radius: 2px;
+  padding: 24px 24px 40px 24px;
+  overflow-y: scroll;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--secondary-background-color);
+  padding: 0%;
+  border: none;
+  color: #f7f7f7;
+  stroke: currentColor;
+  transition: background-color 250ms var(--cubic), stroke 250ms var(--cubic);
+}
+/* Modal-form */
+.restourant-details-modal-title {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.36;
+  letter-spacing: -0.02em;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: #f7f7f7;
+}
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+.first-modal-box {
+  margin-bottom: 32px;
+}
+.restourant-modal-label:not(:last-child) {
+  margin-bottom: 32px;
+  display: block;
+}
+.restourant-details-modal-form-input-desc {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #f7f7f7;
+}
+.restourant-details-modal-form-input {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.18em;
+  color: #d8d7d7;
+  width: 100%;
+  padding-left: 9px;
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  outline-offset: 0;
+  border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);
+}
+.restourant-details-modal-text {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.5;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #d8d7d7;
+  margin-top: 8px;
+}
+.restourant-modal-select {
+  width: 100%;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--primary-background-color);
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  outline-offset: 0;
+  border-bottom: 0.8px solid rgba(247, 247, 247, 0.2);
+}
+option {
+  color: #121212;
+}
+.modal-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 14px 48px;
+  background-color: var(--secondary-background-color);
+  color: var(--primary-background-color);
+  border: 0.8px solid #f7f7f7;
+  border-radius: 32px;
+  margin-top: 40px;
+  text-align: center;
+  line-height: 1.29;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--primary-background-color);
+  color: var(--secondary-background-color);
+}
+/* @Media------------------------------------------------> */
+
+.restaurants-details-title {
+  margin-bottom: 24px;
+  font-size: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .restourant-details-modal {
+    max-width: 628px;
+    max-height: 500px;
+  }
+  .restourants-text-box {
+    align-items: center;
+    display: flex;
+    margin-bottom: 80px;
+  }
+  .restaurants-details-title {
+    font-size: 68px;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+  .restaurants-details-text {
+    margin: 0;
+    margin-left: 32px;
+  }
+  .restourants-text-box {
+    margin-bottom: 80px;
+  }
+  .restourant-details-buttons-list {
+    gap: 14px;
+  }
+  .restourant-details-modal-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .restourant-details-modal-title {
+    margin-bottom: 60px;
+  }
+  .restourant-modal-label:not(:last-child) {
+    margin-bottom: 0;
+    display: block;
+  }
+  .modal-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .first-modal-box {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 40px;
+  }
+  .second-modal-box {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 32px;
+  }
+  .restourant-modal-label {
+    min-width: 266px;
+  }
+  .restourant-modal-select {
+    padding-bottom: 28px;
+  }
+  .modal-btn {
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 1439px) {
+  .none {
+    display: none;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .restourant-details-buttons-list {
+    position: absolute;
+    top: 0;
+    right: 32px;
+  }
+  .container-relative {
+    position: relative;
+  }
+  .restourants-text-box {
+    margin-bottom: 125px;
+  }
+}

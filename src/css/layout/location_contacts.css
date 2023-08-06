@@ -1,0 +1,161 @@
+
+
+.location-addres{
+    font-style: normal;}
+
+
+
+/* mobile style */
+@media screen and  (max-width: 767px) {
+
+.location-title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 32px;
+    
+}
+
+.map-container{
+    margin-bottom: 32px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 114.6%; /* 0.87:1 Aspect Ratio (divide 335 by 384 = 0.5625) */
+}
+
+ .location-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.location-main-address {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
+
+
+    margin-bottom: 28px;
+    
+}
+.location-text {
+    font-weight: 500;
+    line-height: 18px;
+    
+    margin-bottom: 12px;
+    
+}
+.location-tel {
+    
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.location-tel:not(:last-child)
+{margin-bottom: 4px;}
+
+
+}
+
+
+
+/* Tablet style */
+@media screen and (min-width:768px)
+{
+
+
+.location-title {
+    font-weight: 500;
+    font-size: 68px;
+    line-height: 1;
+    margin-bottom: 40px;
+}
+.location-map {width: 704px; height: 576px; margin-bottom: 32px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) 
+{
+    .location-addres 
+    {display: flex; 
+        justify-content: space-between; 
+        align-items: center;
+}
+
+    }
+
+
+.location-main-address {
+    font-size: 18px;
+    line-height: 1.3333;
+}
+.location-text {
+    font-weight: 500;
+    margin-bottom: 12px;
+    
+}
+
+.location-tel {
+    font-size: 18px;
+    line-height: 1.333;
+    /* identical to box height, or 133% */
+    
+    display: flex;
+    align-items: center;
+}
+
+.location-tel:not(:last-child){margin-bottom: 2px;}
+
+.location-tel-wrap {display: flex; flex-direction: column;}
+
+}
+
+/* Desktop style */
+@media screen and (min-width:1440px) {
+.section-location {padding-top: 100px; padding-bottom: 100px;
+    }
+.container-location{
+ position: relative;
+}
+
+.location-title {
+    position: absolute;
+    left: 736px;
+   
+    font-weight: 500;
+    font-size: 68px;
+    line-height: 1;
+    
+}
+.location-map {width: 640px; height: 524px; top: 0; left: 0;
+}
+.location-addres {position: absolute; display: flex; left: 736px; bottom: 50px;
+}
+.location-main-address {
+    font-size: 18px;
+    line-height: 1.333;
+    
+    color: #000000;
+    margin-right: 70px;
+}
+.location-tel-wrap {display: flex; flex-direction: row;
+}
+.location-text {
+    font-weight: 700;
+
+    margin-right: 12px;
+    
+}
+}
+
+
+
+

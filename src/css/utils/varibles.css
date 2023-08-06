@@ -1,0 +1,18 @@
+:root {
+    /* color styles */
+    --primary-text-color: #121212;
+    --primary-background-color:#F7F7F7;
+    --secondary-background-color:#121212;
+    /* font styles */
+    --primary-font: 'DM Sans', sans-serif;
+    --font-weight-std:400;
+    --font-weight-medium:500;
+    --font-weight-large:700;
+    
+     /* hero colors */   
+    --dark-bcg-color: #121212;
+    --text-color-light: #f7f7f7;
+    --active-bcg-btn-dark: #ffffff;
+
+
+}

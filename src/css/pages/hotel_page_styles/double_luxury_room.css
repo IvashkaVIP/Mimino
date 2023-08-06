@@ -1,0 +1,133 @@
+
+.title-section {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.25;
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+
+.photo-double-room-mobile-part2 {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+.text-double-room {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.link-double-room{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 128px;
+  height: 34px;
+  border: 0.8px solid var(--primary-text-color);
+  border-radius: 32px;
+  color: var(--primary-text-color);
+  transition-property: color, background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+.button-double-room {
+  background-color: transparent;
+  border-radius: 32px;
+  border: 0.8px solid var(--primary-text-color);
+  padding: 8px 18px;
+  display: block;
+  text-transform: uppercase;
+}
+.button-double-room:hover,
+.button-double-room:focus,
+.link-double-room:hover,
+.link-double-room:focus {
+  color: var(--primary-background-color);
+  background-color: var(--secondary-background-color);
+}
+
+
+.button-list-double-room {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+}
+.photo-double-room-tablet {
+  display: none;
+}
+.photo-double-room-desktop {
+  display: none;
+}
+/* mobile style */
+@media screen and (max-width: 767px) {
+}
+
+/* Tablet style */
+@media screen and (min-width: 768px) {
+  .button-double-room {
+    line-height: 1.71;
+    padding: 8px 24px;
+  }
+
+  .photo-double-room-mobile {
+    display: none;
+  }
+  .photo-double-room-tablet {
+    display: flex;
+    gap: 32px;
+  }
+  .photo-double-room-tablet-part1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    max-width: 331px;
+    justify-content: right;
+  }
+  .text-double-room {
+    flex-wrap: nowrap;
+    gap: 32px;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+  .text-double-room-part1 {
+    width: 369px;
+  }
+  .text-double-room-part2 {
+    width: 299px;
+  }
+  .button-list-double-room {
+    justify-content: right;
+    gap: 14px;
+    margin-top: 40px;
+  }
+  .link-double-room{
+    line-height: 1.71;
+    width: 140px;
+    height: 40px;}
+}
+
+/* Desktop style */
+@media screen and (min-width: 1440px) {
+  .photo-double-room-tablet {
+    display: none;
+  }
+  .photo-double-room-desktop {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  .conten-double-room {
+    display: flex;
+    justify-content: space-between;
+  }
+  .button-double-room {
+    line-height: 1.33;
+    font-size: 18px;
+    padding: 9px 24px;
+  }
+  .link-double-room{
+    line-height: 1.33;
+    font-size: 18px;
+    width: 166px;
+    height: 42px;}
+}

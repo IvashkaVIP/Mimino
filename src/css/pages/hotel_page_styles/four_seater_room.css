@@ -1,0 +1,19 @@
+
+
+/* mobile style */
+/* @media screen and (max-width: 767px) {
+} */
+
+/* Tablet style */
+@media screen and (min-width: 768px) {
+    .text-four-room{
+        max-width: 475px;
+        font-size: 18px;
+        line-height: 1.33;
+    }
+}
+
+/* Desktop style */
+@media screen and (min-width: 1440px) {
+
+}

@@ -1,0 +1,64 @@
+<div class="backdrop is-hidden" data-modal-table-first>
+        <div class="restourant-details-modal">
+        <button  type="button" class="modal-close-btn" data-modal-table-first-close>
+            <svg class="modal-close-btn-icon" width="28" height="28">
+            <use href="./img/icons.svg#icon-close-window" viewBox="0 0 32 32">
+                "></use>
+            </svg>
+        </button>
+        <h2 class="restourant-details-modal-title">book a table<h2>
+        <form class="restourant-details-modal-form">
+            <div class="modal-box">
+                <div class="first-modal-box">
+                    <label class="restourant-modal-label">
+                        <span class="restourant-details-modal-form-input-desc">Your name</span>
+                        <input
+                            type="text"
+                            name="user-name"
+                            class="restourant-details-modal-form-input"
+                            required
+                            pattern="[a-zA-Z]+"
+                            minlength="2"
+                        />
+                        <p class="restourant-details-modal-text">Who should book a table for?</p>
+                    </label>
+                        <label class="restourant-modal-label">
+                            <select class="restourant-modal-select">
+                                <option value disabled selected>NUMBER OF PEOPLE</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                            </select>
+                        </label>
+                </div>
+                    <div class="second-modal-box">
+                        <label class="restourant-modal-label">
+                            <select class="restourant-modal-select">
+                                <option  value="Today">Today</option>
+                                <option value="Tomorrow">Tomorrow</option>
+                                <option value="after two days">after two days</option>
+                                <option value="after three days">after three days</option>
+                            </select>
+                            <p class="restourant-details-modal-text">WHAT DATE A BOOK?</p>
+                        </label>
+                        <label class="restourant-modal-label">
+                            <span class="restourant-details-modal-form-input-desc">+38()</span>
+                            <input
+                                type="tel"
+                                name="user-phone"
+                                class="restourant-details-modal-form-input"
+                                required
+                                pattern="^[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                            />
+                            <p class="restourant-details-modal-text">Phone number</p>
+                        </label>
+                    </div>
+            </div>
+        </form>
+        <button type="submit" class="modal-btn">MAKE A RESERVATION</button>
+        </div>
+    </div>

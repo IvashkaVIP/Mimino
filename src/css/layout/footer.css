@@ -1,0 +1,144 @@
+.footer {
+    margin-bottom: 32px;
+    border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 20px 32px 20px;
+}
+
+.nav-footer-list {
+    display: none;
+}
+
+.footer-logo-title {
+    margin-bottom: 3px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.18em;
+    color: #121212;
+}
+
+.footer-logo-text {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 0.18em;
+    color: #121212;
+}
+
+.footer-soc-list {
+    display: flex;
+    gap: 14px;
+
+}
+
+.footer-soc-item {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-soc-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* mobile style */
+@media screen and (min-width: 475px) {
+    .footer {
+        margin-bottom: 32px;
+        border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
+    }
+
+    .footer-container {
+        padding: 24px 20px 32px 20px;
+    }
+}
+
+/* Tablet style */
+@media screen and (min-width:768px) {
+    .footer-container {
+        padding: 24px 32px 32px 32px;
+    }
+
+    .footer {
+        margin-bottom: 48px;
+        border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
+    }
+
+    .footer-soc-list {
+        gap: 16px;
+    }
+
+    .footer-soc-item {
+        width: 24px;
+        height: 24px;
+    }
+
+    .footer-soc-icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/* Desktop style */
+@media screen and (min-width:1440px) {
+    .footer-container {
+        padding: 44px 32px 80px 32px;
+    }
+
+    .footer {
+        margin-bottom: 80px;
+        border-bottom: 0.5px solid rgba(18, 18, 18, 0.3);
+    }
+
+    .footer-logo {
+        text-align: center;
+    }
+
+    .footer-logo-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        color: #121212;
+    }
+
+    .footer-logo-text {
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 1.25;
+        color: #121212;
+    }
+
+    .nav-footer-list {
+        display: flex;
+        gap: 32px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.28;
+        letter-spacing: 0.05em;
+        color: #121212;
+    }
+
+    .nav-footer {
+        display: flex;
+        gap: 320px;
+    }
+
+    .footer-soc-list {
+        gap: 14px;
+    }
+
+    .footer-soc-item {
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-soc-icon {
+        width: 20px;
+        height: 20px;
+    }
+}
