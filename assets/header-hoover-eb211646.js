@@ -1,0 +1,1 @@
+const s=document.querySelectorAll(".header-link"),a=document.location.pathname,e="home-nav-link";s.forEach(t=>{if(t.classList.contains(e)&&t.classList.remove(e),a.includes(t.getAttribute("href"))){t.classList.add(e);return}});a==="/dream_team/"&&s[0].classList.add(e);
